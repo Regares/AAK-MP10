@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    int  a;
+    printf("Введите целое положительное число: ");
+    scanf("%d", &a);
+    if ((a % 2 == 0) & (a < 100) & (a > 9))
+    {
+        printf("Высказывание иcтиннo.");
+    }
+    else
+    {
+        printf("Высказывание лoжнo.");
+    }
+    return 0;
+}
