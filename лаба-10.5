@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{
+    int  a, ed, des, sot, tis;
+    printf("Введите четырёхзначное число: ");
+    scanf("%d", &a);
+    ed = a % 10;
+    des = (a - ed) % 100 / 10;
+    sot = (a - ed - des) % 1000 / 100;
+    tis = (a - ed - des - sot) % 10000 / 1000;
+    if ((des == sot) & (ed == tis))
+    {
+        printf("Высказывание иcтиннo.");
+    }
+    else
+    {
+        printf("Высказывание лoжнo.");
+    }
+    return 0;
+}
