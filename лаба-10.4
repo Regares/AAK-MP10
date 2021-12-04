@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int  a, ed, des, sot;
+    printf("Введите трёхзначное число: ");
+    scanf("%d", &a);
+    ed = a % 10;
+    des = (a - ed) % 100 / 10;
+    sot = (a - ed - des) % 1000 / 100;
+    if ( ((ed < des) & (des < sot)) || ((ed > des) & (des > sot)) )
+    {
+        printf("Высказывание иcтиннo.");
+    }
+    else
+    {
+        printf("Высказывание лoжнo.");
+    }
+    return 0;
+}
